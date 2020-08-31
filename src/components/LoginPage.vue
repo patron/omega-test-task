@@ -110,7 +110,7 @@ import VueMask from "v-mask";
 
 const phonenum = helpers.regex(
   "phonenum",
-  /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{6})$/
+  /^\+44[-. ]?([0-9]{4})[-. ]?([0-9]{6})$/
 );
 
 Vue.use(Vuelidate);
