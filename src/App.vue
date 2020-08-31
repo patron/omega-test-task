@@ -1,28 +1,25 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div>
+    <img alt="Omega logo" src="@/assets/logo.svg" class="logo" />
+    <LoginPage />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import LoginPage from "./components/LoginPage.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    LoginPage
   }
 };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.logo {
+  position: absolute;
+  top: 40px;
+  left: 40px;
 }
 </style>
